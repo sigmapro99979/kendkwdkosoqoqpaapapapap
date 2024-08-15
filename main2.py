@@ -75,7 +75,10 @@ async def check():
 			file.write(f"{text}\n")
 
 async def check2():
-	os.remove('socks5.txt')
+	try:
+		os.remove('socks5.txt')
+	except:
+		pass
 	os.system('clear')
 	for url in socks5_links:
 		async with aiohttp.ClientSession() as session:
