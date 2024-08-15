@@ -225,6 +225,6 @@ async def methods():
 	else:
 		print("[*] Exit..")
 
-#asyncio.run(check())
+asyncio.run(check())
 asyncio.run(check2())
 asyncio.run(main_menu())
